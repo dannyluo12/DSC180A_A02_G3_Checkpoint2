@@ -4,8 +4,7 @@ import pandas as pd #maybe bad to have this here
 
 # make sure to import library files
 sys.path.insert(0, 'src')
-from etl import generate_data, save_data
-from eda import generate_stats
+from analysis.generate_data import clean_rosdata,clean_csvdata
 from utils import convert_notebook
 
 
@@ -18,11 +17,11 @@ def main(targets):
 
     if 'data' in targets:
 
-        data = generate_data(**data_config)
-        save_data(data, **data_config)
+        rosdata = clean_rosdata()
+        csvdata=clean_csvdata(data_config,'plan_data_dir')
+        data=[rosdata,csvdata]
 
     if 'eda' in targets:
-
         try:
             data
         except NameError:
@@ -38,3 +37,4 @@ if __name__ == '__main__':
 
     targets = sys.argv[1:]
     main(targets)
+

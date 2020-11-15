@@ -1,4 +1,4 @@
 {
-    "plan_data_dir" : "./data/highway_map.csv",
+    "plan_data_dir" : "/teams/DSC180A_FA20_A00/a02autonomousvehicles/group03/data/highway_map.csv",
     "size" : [100000, 10]
 }
