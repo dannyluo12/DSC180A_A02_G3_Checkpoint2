@@ -5,7 +5,3 @@
     "notebook": ["/notebooks/report.ipynb"], # path to at least one notebook meant for reading by someone other than you.
     "targets": ["data", "eda"] # at least two targets
 }
-
-# currently filler code for submissions.json
-# will need to replace
-
