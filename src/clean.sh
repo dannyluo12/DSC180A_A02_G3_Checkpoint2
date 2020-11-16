@@ -2,6 +2,7 @@
 # this script convert test.bag in 
 # use topic of /camera/image_raw
 # https://wiki.ros.org/rosbag/Tutorials/Exporting%20image%20and%20video%20data
+pwd > ~/dir.txt
 roscd image_view
 rosmake image_view
 sudo apt-get install mjpegtools
@@ -18,9 +19,9 @@ echo "</launch>" | tee -a $output
 roslaunch export.launch
 
 # the output dir of frame
-cd ~
-mkdir jpeg_frame
-mv ~/.ros/frame*.jpg  jpeg_frame
+cd "$(head -1 ~/dir.txt)"
+
+mv ~/.ros/frame*.jpg  ./data/ros_jpeg
 
 
 

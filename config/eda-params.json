@@ -1,5 +1,4 @@
 {
-    "outdir": "data/report",
     "report_in_path": "notebooks/report.ipynb",
-    "report_out_path": "report/report.html"
+    "report_out_path": "notebooks/report.html"
 }
