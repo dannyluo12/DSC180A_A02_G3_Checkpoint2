@@ -2,9 +2,10 @@
     "config": ["config/data-params.json", "config/eda-params.json"],  # paths of at least 2 config files
     "build": "run.py", # path of your build script
     "library": ["src"], # directory containing (your) library code
-    "notebook": ["report.ipynb"], # path to at least one notebook meant for reading by someone other than you.
+    "notebook": ["/notebooks/report.ipynb"], # path to at least one notebook meant for reading by someone other than you.
     "targets": ["data", "eda"] # at least two targets
 }
 
 # currently filler code for submissions.json
 # will need to replace
+

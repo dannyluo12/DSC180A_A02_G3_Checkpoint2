@@ -5,7 +5,7 @@ def clean_rosdata():
     directory_ros = "ros_jpeg"
     parent_dir = "./data/"
     os.mkdir(os.path.join(parent_dir, directory))
-    os.system('bash ./clean.sh')
+    os.system('bash ./src/clean.sh')
 
 
 

@@ -5,17 +5,8 @@
 
 
 ***
-Explain what happens here
+DockerFile to be implemented in the near future. 
+
+Link to dockerhub image: ...
 ***
 
-
-## Contribution
-
-Seokmin Hong A14614169  
-For this checkpoint, Seokmin ...
-
-Yuxi Luo A14862234
-Yuxi Luo ...
-
-Jia Shi A15233744
-Jia Shi ...
