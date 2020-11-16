@@ -1,4 +1,4 @@
-def convert_notebook():
+def convert_notebook(a,b):
     import os
     # may have this error
     # xelatex not found on PATH, if you have not installed xelatex you may need to do so. Find further instructions at https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex.

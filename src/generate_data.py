@@ -9,7 +9,8 @@ def clean_rosdata():
 
 
 
-def clean_csvdata(indir, outdir):
+
+def clean_csvdata(indir, outdir,csv_name):
 
     '''
     Reads the data by creating a symlink between the 
@@ -24,19 +25,15 @@ def clean_csvdata(indir, outdir):
 
     # create a convenient hierarchical structure of folders inside /data
     directory1 = "raw"
-    directory2 = "temp"
-    directory3 = "out"
     parent_dir = "./data/"
-    
-    os.mkdir(os.path.join(parent_dir, directory1))
-    os.mkdir(os.path.join(parent_dir, directory2))
-    os.mkdir(os.path.join(parent_dir, directory3))
+    data_link=os.path.join(parent_dir, directory1)
+    os.mkdir(data_link)
 
 
     # create the symlink
-    os.symlink(indir, outdir) 
+    os.symlink(data_link, indir) 
 
-    data=pd.read_csv(outdir,header=None,sep=" ")
+    data=pd.read_csv(data_link[csv_name],header=None,sep=" ")
     data=data.to_numpy()
     print("data.shape :")
     print(data.shape)

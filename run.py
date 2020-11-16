@@ -9,6 +9,7 @@ from generate_data import clean_rosdata,clean_csvdata
 from utils import convert_notebook
 
 
+
 def main(targets):
 
     # make sure to load up the config files
@@ -30,12 +31,12 @@ def main(targets):
         try:
             data
         except NameError:
-            data = pd.read_csv(data_config['outdir'])
-
-        generate_stats(data, **eda_config)
-
+            pass
         # execute notebook / convert to html
         convert_notebook(**eda_config)
+        print("Please refer to the notebooks/report.html for EDA")
+        
+        
 
 
 if __name__ == '__main__':
