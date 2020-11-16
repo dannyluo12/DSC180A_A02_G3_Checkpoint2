@@ -1,12 +1,12 @@
 import sys
 import json
-import pandas as pd 
+import os
 
-# make sure to import library files
+# make sure to import library code
 sys.path.insert(0, 'src')
+
 from generate_data import clean_rosdata,clean_csvdata
 from utils import convert_notebook
-
 
 
 def main(targets):
@@ -19,7 +19,7 @@ def main(targets):
         csvdata=clean_csvdata(**data_cfg)
         # if ros is installed, clean ros data
         try:
-            import ros
+            import rospy
             rosdata = clean_rosdata()
         except:
             rosdata=[]
