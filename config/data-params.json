@@ -1,5 +1,5 @@
 {
-    "indir": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj/",
+    "indir": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj",
     "outdir": "",
     "csv_name":"standard_data.csv"
 }

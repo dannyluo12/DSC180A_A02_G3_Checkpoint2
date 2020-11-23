@@ -1,7 +1,9 @@
 import os 
 
 def clean_rosdata():
-
+    '''
+    No input. Call this function to clean the ros data
+    '''
     directory_ros = "ros_jpeg"
     parent_dir = "./data/"
     os.mkdir(os.path.join(parent_dir, directory))
