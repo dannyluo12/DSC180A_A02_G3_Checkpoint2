@@ -1,5 +1,11 @@
 {
-    "indir": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj",
-    "outdir": "",
+    "indir_velocity": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj/velocity_data.csv",
+    "indir_odometry": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj/odometry_data.csv",
+    "indir_standard": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj/standard_data.csv",
+    "indir_wrench": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj/wrench_data.csv",
+    "outdir_velocity" : "data/raw/velocity_data.csv",
+    "outdir_odometry" : "data/raw/odometry_data.csv",
+    "outdir_standard": "data/raw/standard_data.csv",
+    "outdir_wrench" : "data/raw/wrench_data.csv",
     "csv_name":"standard_data.csv"
 }
