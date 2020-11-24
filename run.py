@@ -36,6 +36,17 @@ def main(targets):
         convert_notebook(**eda_cfg)
         print("Please refer to the notebooks/report.html for EDA")
         
+    if 'test' in targets: # edit code portion for test to run on dummy data (test data)
+        csvdata=clean_csvdata(**data_cfg)
+        # if ros is installed, clean ros data
+        try:
+            import rospy
+            rosdata = clean_rosdata()
+        except:
+            rosdata=[]
+        
+        data=[rosdata,csvdata]
+        
         
 
 
