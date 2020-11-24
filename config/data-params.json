@@ -6,6 +6,5 @@
     "outdir_velocity" : "data/raw/velocity_data.csv",
     "outdir_odometry" : "data/raw/odometry_data.csv",
     "outdir_standard": "data/raw/standard_data.csv",
-    "outdir_wrench" : "data/raw/wrench_data.csv",
-    "csv_name":"standard_data.csv"
+    "outdir_wrench" : "data/raw/wrench_data.csv"
 }

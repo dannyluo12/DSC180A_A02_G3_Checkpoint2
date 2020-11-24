@@ -12,7 +12,7 @@ def clean_rosdata():
     os.system('bash ./src/clean.sh')
 
 
-def clean_csvdata(indir, outdir): #,csv_name):
+def clean_csvdata(indir_velocity, indir_odometry, indir_standard, indir_wrench, outdir_velocity, outdir_odometry, outdir_standard, outdir_wrench):
 
     '''
     Reads the data by creating a symlink between the 
@@ -34,7 +34,10 @@ def clean_csvdata(indir, outdir): #,csv_name):
 
     # create the symlink
 #     os.symlink(data_link, indir)
-    os.symlink(indir, outdir)
+    os.symlink(indir_velocity, outdir_velocity)
+    os.symlink(indir_odometry, outdir_odometry)
+    os.symlink(indir_standard, outdir_standard)
+    os.symlink(indir_wrench, outdir_wrench)
 
 #     data=pd.read_csv(data_link[csv_name],header=None,sep=" ")
 #     data=data.to_numpy()

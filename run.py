@@ -6,15 +6,15 @@ import os
 sys.path.insert(0, 'src')
 
 from generate_data import clean_rosdata,clean_csvdata
-from utils import convert_notebook
+from util import convert_notebook
 
 
 
 def main(targets):
 
     # make sure to load up the config files
-    data_config = json.load(open('config/data-params.json'))
-    eda_config = json.load(open('config/eda-params.json'))
+    data_cfg = json.load(open('config/data-params.json'))
+    eda_cfg = json.load(open('config/eda-params.json'))
 
     if 'data' in targets:
         csvdata=clean_csvdata(**data_cfg)
