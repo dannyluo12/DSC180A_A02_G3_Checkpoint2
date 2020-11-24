@@ -33,7 +33,7 @@ def main(targets):
         except NameError:
             pass
         # execute notebook / convert to html
-        convert_notebook(**eda_config)
+        convert_notebook(**eda_cfg)
         print("Please refer to the notebooks/report.html for EDA")
         
         
