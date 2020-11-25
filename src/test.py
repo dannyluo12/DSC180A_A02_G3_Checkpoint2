@@ -36,8 +36,6 @@ def test_func(indir, outdir):
 #     print(velmsgs)
 #     veldf = pd.read_csv(velmsgs[0])
 
-### make sure to add this path '/testing_DSC180_code/DSC180A_A02_G3_Replication_Project/test/testdata/chunk_0003' to gitignore
-
     # Read Laser Data
     laser_data = b.laser_data()
     laser_df = pd.read_csv(laser_data[0])
