@@ -1,0 +1,11 @@
+{
+    "indir_velocity": "/testing_DSC180_code/DSC180A_A02_G3_Replication_Project/test/testdata/test_velocity_data.csv",
+    "indir_odometry": "/testing_DSC180_code/DSC180A_A02_G3_Replication_Project/test/testdata/test_odometry_data.csv",
+    "indir_standard": "/testing_DSC180_code/DSC180A_A02_G3_Replication_Project/test/testdata/test_standard_data.csv",
+    "indir_wrench": "/testing_DSC180_code/DSC180A_A02_G3_Replication_Project/test/testdata/test_wrench_data.csv",
+    "outdir_velocity" : "data/test/velocity_data.csv",
+    "outdir_odometry" : "data/test/odometry_data.csv",
+    "outdir_standard": "data/test/standard_data.csv",
+    "outdir_wrench" : "data/test/wrench_data.csv"
+}
+

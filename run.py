@@ -5,7 +5,7 @@ import os
 # make sure to import library code
 sys.path.insert(0, 'src')
 
-from generate_data import clean_rosdata,clean_csvdata
+from generate_data import clean_rosdata, clean_csvdata, test
 from util import convert_notebook
 
 
@@ -15,9 +15,10 @@ def main(targets):
     # make sure to load up the config files
     data_cfg = json.load(open('config/data-params.json'))
     eda_cfg = json.load(open('config/eda-params.json'))
+    test_cfg = json.load(open('config/test-params.json'))
 
     if 'data' in targets:
-        csvdata=clean_csvdata(**data_cfg)
+        csvdata=clean_csvdata(**data_cfg) #takes in all arguments from data_cfg
         # if ros is installed, clean ros data
         try:
             import rospy
@@ -37,16 +38,7 @@ def main(targets):
         print("Please refer to the notebooks/report.html for EDA")
         
     if 'test' in targets: # edit code portion for test to run on dummy data (test data)
-        csvdata=clean_csvdata(**data_cfg)
-        # if ros is installed, clean ros data
-        try:
-            import rospy
-            rosdata = clean_rosdata()
-        except:
-            rosdata=[]
-        
-        data=[rosdata,csvdata]
-        
+        rosdata = test(**test_cfg)
         
 
 
