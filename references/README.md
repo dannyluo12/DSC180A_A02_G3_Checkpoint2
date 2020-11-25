@@ -1,4 +1,4 @@
-# DSC180A A02 Group 3 Checkpoint 2
+# DSC180A_A02 Group 3 (Methodology 7)
 
 
 ### Seokmin Hong A14614169 

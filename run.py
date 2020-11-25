@@ -7,7 +7,7 @@ sys.path.insert(0, 'src')
 
 from generate_data import clean_rosdata, clean_csvdata
 from util import convert_notebook
-from test import test_func
+from test import test_func, plot
 
 
 
@@ -17,6 +17,7 @@ def main(targets):
     data_cfg = json.load(open('config/data-params.json'))
     eda_cfg = json.load(open('config/eda-params.json'))
     test_cfg = json.load(open('config/test-params.json'))
+    test_plots_cfg = json.load(open('config/test-plots-params.json'))
 
     if 'data' in targets:
         csvdata=clean_csvdata(**data_cfg) #takes in all arguments from data_cfg
@@ -40,7 +41,8 @@ def main(targets):
         
     if 'test' in targets: # edit code portion for test to run on dummy data (test data)
         ros_csv_data = test_func(**test_cfg)
-        print('Data pipeline process of converting ".bag" file into ".csv" file completed as test function. The resulting data can be seen in the "data/test/..." path.')
+        csv_data_plots = plot(**test_plots_cfg)
+        print('Data pipeline process of converting ".bag" file into ".csv" file completed as test function. The resulting data and plots can be seen in the "data/test/..." path.')
 
 
 if __name__ == '__main__':
