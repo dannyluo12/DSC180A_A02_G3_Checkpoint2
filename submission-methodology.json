@@ -1,5 +1,3 @@
 {
     "dockerhub-id": "ucsdets/scipy-ml-notebook:latest",
 }
-
-# "dockerhub-id": "elvishelvis/dsc180s2g3:latest", # this dockerfile contains ros but not necessary
