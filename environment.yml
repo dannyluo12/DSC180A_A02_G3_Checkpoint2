@@ -10,6 +10,7 @@ dependencies:
     - pip
     - jupyter
     - ros
+    - bagpy
     - pyrosbag
     - pip:
       - pandas
