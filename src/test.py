@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 def test_func(indir, outdir):
     '''
     Part of the data pipeline to transform our raw '.bag' file into csv data for further EDA (exploratory data analysis)
+    
+    note: was able to utilize bagpy and rosbag on the ucsdets/scipy-ml-notebook docker image
     '''
     # first create the data directory
     directory = "data"
