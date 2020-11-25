@@ -1,3 +1,5 @@
+# This is a personal note to keep track of potential configurations that might be useful
+
 {
     "indir_velocity": "./test/testdata/test_velocity_data.csv",
     "indir_odometry": "./test/testdata/test_odometry_data.csv",

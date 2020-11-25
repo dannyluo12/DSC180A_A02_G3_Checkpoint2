@@ -20,13 +20,7 @@ def test_func(indir, outdir):
     if (os.path.exists(path) and os.path.isdir(path)):
         shutil.rmtree(path)
 
-    os.mkdir(path)
-
-    # create a convenient hierarchical structure of folders inside /data
-#     directory1 = "test"
-#     parent_dir = "./data/"
-#     data_link=os.path.join(parent_dir, directory1)
-#     os.mkdir(data_link)
+#     os.mkdir(path)
     os.mkdir(outdir)
     print('data directory successfully created')
 
@@ -40,31 +34,31 @@ def test_func(indir, outdir):
     laser_data = b.laser_data()
     laser_df = pd.read_csv(laser_data[0])
     laser_df.to_csv(os.path.join(outdir,'test_laser_data.csv'))
-    print('Successfully added laser data to path')
+    print('Successfully added laser data from .bag file to path')
     
     # Read Velocity Data
     velocity_data = b.vel_data()
     velocity_df = pd.read_csv(velocity_data[0])
     velocity_df.to_csv(os.path.join(outdir,'test_velocity_data.csv'))
-    print('Successfully added velocity data to path')
+    print('Successfully added velocity data from .bag file to path')
     
     # Read Standard Messages
     standard_data = b.std_data()
     standard_df = pd.read_csv(standard_data[0])
     standard_df.to_csv(os.path.join(outdir,'test_standard_data.csv'))
-    print('Successfully added standard data to path')
+    print('Successfully added standard data from .bag file to path')
     
     # Read Odometry Data
     odometry_data = b.odometry_data()
     odometry_df = pd.read_csv(odometry_data[0])
     odometry_df.to_csv(os.path.join(outdir,'test_odometry_data.csv'))
-    print('Successfully added odometry data to path')
+    print('Successfully added odometry data from .bag file to path')
     
     # Read Wrench Data
     wrench_data = b.wrench_data()
     wrench_df = pd.read_csv(wrench_data[0])
     wrench_df.to_csv(os.path.join(outdir,'test_wrench_data.csv'))
-    print('Successfully added wrench data to path')
+    print('Successfully added wrench data from .bag file to path')
     
     return 
 
