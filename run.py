@@ -40,7 +40,7 @@ def main(targets):
         
     if 'test' in targets: # edit code portion for test to run on dummy data (test data)
         ros_csv_data = test_func(**test_cfg)
-        
+        print('Data pipeline process of converting ".bag" file into ".csv" file completed as test function. The resulting data can be seen in the "data/test/..." path.')
 
 
 if __name__ == '__main__':

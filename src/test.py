@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 def test_func(indir, outdir):
     '''
-    Part of the data pipeline to transform our raw '.bag' file into csv data
+    Part of the data pipeline to transform our raw '.bag' file into csv data for further EDA (exploratory data analysis)
     '''
     # first create the data directory
     directory = "data"
@@ -20,7 +20,7 @@ def test_func(indir, outdir):
     if (os.path.exists(path) and os.path.isdir(path)):
         shutil.rmtree(path)
 
-#     os.mkdir(path)
+    os.mkdir(path)
     os.mkdir(outdir)
     print('data directory successfully created')
 
