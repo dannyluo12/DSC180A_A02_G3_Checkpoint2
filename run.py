@@ -5,8 +5,9 @@ import os
 # make sure to import library code
 sys.path.insert(0, 'src')
 
-from generate_data import clean_rosdata, clean_csvdata, test
+from generate_data import clean_rosdata, clean_csvdata
 from util import convert_notebook
+from test import test_func
 
 
 
@@ -38,7 +39,7 @@ def main(targets):
         print("Please refer to the notebooks/report.html for EDA")
         
     if 'test' in targets: # edit code portion for test to run on dummy data (test data)
-        rosdata = test(**test_cfg)
+        ros_csv_data = test_func(**test_cfg)
         
 
 
