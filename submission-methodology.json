@@ -1,5 +1,5 @@
 {
-    "dockerhub-id": "ucsdets/scipy-ml-notebook:latest",
+    "dockerhub-id": "elvishelvis/180new:latest",
 }
 
 # change this to the docker image that we create
