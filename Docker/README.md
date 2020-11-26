@@ -1,3 +1,12 @@
+# Dockerhub Link: 
+
+Can find access to repo and image here:
+https://hub.docker.com/repository/docker/dannyluo12/dsc180a-a02-g3
+
+
+
+
+
 # Instructions on Building a Custom Image for DataHub/DSMLP
 
 This guide is for advanced DSMLP users (both students and instructors) who want to add or modify applications on their working environment using a custom Docker container. 
