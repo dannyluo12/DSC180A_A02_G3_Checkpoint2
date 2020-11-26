@@ -16,7 +16,7 @@ RUN apt-get update
 RUN apt-get -y install jupyter-notebook
 RUN apt-get -y install vim
 # 3) install packages
-RUN pip install --no-cache-dir rospkg bagpy
+RUN pip install --no-cache-dir rospkg bagpy pyrosbag
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
