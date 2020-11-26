@@ -68,7 +68,7 @@ def clean_csv(odom_data, standard_data, velocity_data, outdir):
     '''
     function to save clean csv to outdirectory: "./data/test/clean"
     '''
-    os.mkdir(outdir) # should create "./data/test/data_plots" folder path because data folder already created in func above
+    os.mkdir(outdir) # should create "./data/test/clean" folder path because data folder already created in func above
     velocity_df = pd.read_csv(velocity_data)
     odometry_df = pd.read_csv(odom_data)
     standard_df = pd.read_csv(odom_data)
@@ -85,7 +85,7 @@ def clean_csv(odom_data, standard_data, velocity_data, outdir):
     velocity_cleaned.to_csv(velocity_name)
     odometry_cleaned.to_csv(standard_name)
     standard_cleaned.to_csv(odom_name)
-    print('cleaned CSV successfully save to path "./data/test/data_plots"')
+    print('cleaned CSV successfully save to path "./data/test/clean"')
 if __name__ == '__main__':
     main()
 
