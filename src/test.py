@@ -6,6 +6,7 @@ from bagpy import bagreader
 import pandas as pd
 import seaborn as sea
 import matplotlib.pyplot as plt
+import os.path as osp
 
 def test_func(indir, outdir):
     '''
@@ -26,7 +27,7 @@ def test_func(indir, outdir):
     os.mkdir(outdir)
     print('data directory successfully created')
 
-    bag_path = os.path.join(indir, 'chunk_0003.bag') # this specfici bag is for test
+    bag_path = os.path.join(indir, 'test_0006.bag') # this specfici bag is for test
     b = bagreader(bag_path) #might have to change this path
 #     velmsgs = b.vel_data()
 #     print(velmsgs)
@@ -63,7 +64,28 @@ def test_func(indir, outdir):
     print('Successfully added wrench data from .bag file to path')
     
     return 
+def clean_csv(odom_data, standard_data, velocity_data, outdir):
+    '''
+    function to save clean csv to outdirectory: "./data/test/clean"
+    '''
+    os.mkdir(outdir) # should create "./data/test/data_plots" folder path because data folder already created in func above
+    velocity_df = pd.read_csv(velocity_data)
+    odometry_df = pd.read_csv(odom_data)
+    standard_df = pd.read_csv(odom_data)
+    
+    velocity_cleaned = velocity_df.drop(["Unnamed: 0"], axis=1)
+    odometry_cleaned = odometry_df.drop(["Unnamed: 0"], axis=1)
+    standard_cleaned = standard_df.drop(["Unnamed: 0"], axis=1)
+    print('CSV data successfully cleaned')
 
+    velocity_name=osp.join(outdir,velocity_data.split('/')[-1])
+    standard_name=osp.join(outdir,standard_data.split('/')[-1])
+    odom_name=osp.join(outdir,odom_data.split('/')[-1])
+
+    velocity_cleaned.to_csv(velocity_name)
+    odometry_cleaned.to_csv(standard_name)
+    standard_cleaned.to_csv(odom_name)
+    print('cleaned CSV successfully save to path "./data/test/data_plots"')
 if __name__ == '__main__':
     main()
 
