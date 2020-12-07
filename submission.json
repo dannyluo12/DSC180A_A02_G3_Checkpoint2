@@ -1,7 +1,4 @@
 {
-    "config": ["config/data-params.json", "config/eda-params.json"],  # paths of at least 2 config files
-    "build": "run.py", # path of your build script
-    "library": ["src"], # directory containing (your) library code
-    "notebook": ["/notebooks/report.ipynb"], # path to at least one notebook meant for reading by someone other than you.
-    "targets": ["data", "eda"] # at least two targets
+    "dockerhub-id": "dannyluo12/dsc180a-a02-g3:v2",
+    "repository-id": "https://github.com/dannyluo12/DSC180A_A02_G3_Replication_Project/tree/main"
 }

@@ -1,0 +1,6 @@
+{
+    "odom_data" : "./data/test/test_odometry_data.csv",
+    "standard_data" : "./data/test/test_standard_data.csv",
+    "velocity_data" : "./data/test/test_velocity_data.csv",
+    "outdir" : "./data/test/data_plots"
+}
