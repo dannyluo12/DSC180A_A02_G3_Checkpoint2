@@ -1,30 +1,22 @@
-# DSC180A_A02_G3_Checkpoint2
+# Obstacle Avoidance and Path Planning
 
-- Note: this repo is for DSC180A SectionA02 Group 3 project replication (Fall 2020)
+This project aims to illustrate various methods of obstacle avoidance and path planning through simulations. ROS (Robotic Operating system) navigation stacks are utilized in which gmapping and rtabmap are implemented to travel from point A to point B. Data generated from respective simulations are contained exported via rosbag files in which further exploratory data analysis can be performed. It must be noted that ROS and Ubuntu linux OS could not be loaded onto a respective dockerfile to create simulations upon launching a docker image. Therefore, rosbags were the chosen data structure to export data as they contain all the rostopic messages and its respective data. After performing EDA, plots and visualizations of the data are generated. (still can edit before submission) 
 
-This project aims to understand obstacle avoidance and path planning. Data is generated using ROS packages in conjucntion with the Intel Realsense D435i/D455 camera.
-The resulting output will yield rosbag files which will need to be transformed for exploratory data analysis. 
+## Running the project
+* Use the command `launch.sh -i dannyluo12/dsc180a-a02-g3:v2` in order to have the necessary environment to run data processing, analysis, and visualization
+* symbolic link is created between respective DSMLP /teams folder and local home directory /DSC180A_A02_stuff/replication_proj_data folder
 
-## Running the report
-### Python Run Targets
-```
-python run.py
-```
-### Target 1: Data
-```
-python run.py data
-```
-### Target 2: Run EDA
-```
-python run.py eda
-```
+## Building the project using `run.py`
+* note... will need to add the other target descriptions in here
+* Use the command `python run.py test` to run the data pipeline on a subset of the data
+* Use the command `python run.py all` to run the data pipeline on the whole dataset
 
 ### Contributions:
 <b>Yuxi Luo</b> A14862234 <br />
-Yuxi contributed by creating the convert.py file that converts “.bag” files into csv files directly. Also, he wrote the EDA analysis using the processed data from the csv converted files.
+Yuxi contributed by ...
 
 <b>Seokmin Hong</b> A14614169 <br />
-Seokmin contributed by using the bag2csv.py file to convert the “.bag” files into csv files in order to extract useful data for the project. Also, he created the EDA graphs using the extracted information using matplotlib and pandas.
+Seokmin contributed by ...
 
 <b>Jia Shi</b> A15233744 <br />
-Jia contributed by researching different ways to convert the “.bag” files created from the Realsense D435i/D455 camera into images or csv files. He also implemented the structure for the coding portion of the GitHub repo.
+Jia contributed by ...

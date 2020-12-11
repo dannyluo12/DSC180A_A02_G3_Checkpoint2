@@ -1,2 +1,0 @@
-may have to edit this folder to fit in test data (similar to methodology 7)
---> since Aaron and TAs won't run on full data based on time needed to run

@@ -43,14 +43,6 @@ def clean_csvdata(indir_velocity, indir_odometry, indir_standard, indir_wrench, 
     os.symlink(indir_standard, outdir_standard)
     os.symlink(indir_wrench, outdir_wrench)
 
-#     data=pd.read_csv(data_link[csv_name],header=None,sep=" ")
-#     data=data.to_numpy()
-#     print("data.shape :")
-#     print(data.shape)
-#     print("Fist Datapoint :")
-#     # print("X, Y, Speed, D_X, D_Y:")
-#     print(data[0])
-#     return data
     return 
 
 
