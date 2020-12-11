@@ -12,13 +12,11 @@ LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
 # 2) change to root to install packages
 USER root
 
-RUN apt-get update
-RUN apt-get -y install jupyter-notebook
 RUN apt-get -y install vim
 # 3) install packages
 RUN pip install --no-cache-dir rospkg bagpy pyrosbag
 
 # 4) change back to notebook user
-COPY /run_jupyter.sh /
+COPY /Docker/run_jupyter.sh /
 RUN chmod 777 /run_jupyter.sh
 USER $NB_UID
