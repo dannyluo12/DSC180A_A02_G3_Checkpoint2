@@ -1,15 +1,10 @@
 # DSC180A A02 Group 3
 
-
-### Seokmin Hong A14614169 
-### Jia Shi A15233744 
-### Yuxi Luo A14862234
-
+## [Final Report](https://docs.google.com/document/d/1qqh2aneYYA49mJ8OWd9EqrixGu1xMaPa6zLT7eekv6o/edit?usp=sharing)
+* <b>note: </b> permissions are set to any ucsd email can view
 
 ***
-References here:
-
-useful links: <br/>
+Citation references here: <br/>
 [1] https://www.intelrealsense.com/get-started-depth-camera <br/>
 [2] http://wiki.ros.org/Robots/TurtleBot <br/>
 [3] http://gazebosim.org/tutorials?tut=ros_overview <br/>
