@@ -1,8 +1,7 @@
 # Dockerhub Link: 
 
 Can find access to repo and image here:
-https://hub.docker.com/repository/docker/dannyluo12/dsc180a-a02-g3
-
+https://hub.docker.com/r/elvishelvis/dsc180s2g3
 
 
 

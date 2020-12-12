@@ -2,17 +2,7 @@ import os
 import pandas as pd
 import shutil
 
-def clean_rosdata():
-    '''
-    No input. Call this function to clean the ros data
-    '''
-    directory_ros = "ros_jpeg"
-    parent_dir = "./data/"
-    os.mkdir(os.path.join(parent_dir, directory))
-    os.system('bash ./src/clean.sh')
-
-
-def clean_csvdata(indir_velocity, indir_odometry, indir_standard, indir_wrench, outdir_velocity, outdir_odometry, outdir_standard, outdir_wrench):
+def get_data(indir_velocity, indir_odometry, indir_standard, indir_wrench, outdir_velocity, outdir_odometry, outdir_standard, outdir_wrench):
 
     '''
     Reads the data by creating a symlink between the 

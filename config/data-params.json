@@ -1,10 +1,8 @@
 {
-    "indir_velocity": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj_data/velocity_data.csv",
-    "indir_odometry": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj_data/odometry_data.csv",
-    "indir_standard": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj_data/standard_data.csv",
-    "indir_wrench": "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj_data/wrench_data.csv",
-    "outdir_velocity" : "data/raw/velocity_data.csv",
-    "outdir_odometry" : "data/raw/odometry_data.csv",
-    "outdir_standard": "data/raw/standard_data.csv",
-    "outdir_wrench" : "data/raw/wrench_data.csv"
+    "indir_origin_bag" : "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj_data/origin.bag",
+    "indir_gmapping_bag" : "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj_data/gmapping_data.bag",
+    "indir_rtab_bag" : "/teams/DSC180A_FA20_A00/a02autonomousvehicles/personal-yuxiluo/data/raw/replication_proj_data/rtab_noimg.bag",
+    "outdir_origin_bag" : "data/raw/origin.bag",
+    "outdir_gmapping_bag" : "data/raw/gmapping_data.bag",
+    "outdir_rtab_bag" : "data/raw/rtab_noimg.bag"
 }
