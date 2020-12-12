@@ -31,6 +31,16 @@ def main(targets):
         getting_data = get_data(**data_cfg)
         print('Data from project successfully pulled intp /data/raw folder.')
         
+    if 'eda' in targets:
+        perform_eda = eda_func(gmapping_cfg)
+        rtab_csv_data = eda_func(**rtab_cfg)
+        print('Rosbag data successfully transformed into csv data and eda performed')
+        
+    if 'plot' in targets:
+        gmapping_plot = plot_data(**gmapping_plots_cfg)
+        rtab_plot = plot_data(**rtab_plots_cfg)
+        print('Csv data generated from eda process now successfully plotted')
+        
     if 'all' in targets:
         getting_data = get_data(**data_cfg)
         gmapping_csv_data = eda_func(**gmapping_cfg)
