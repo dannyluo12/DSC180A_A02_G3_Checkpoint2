@@ -19,8 +19,7 @@ This project aims to illustrate various methods of obstacle avoidance and path p
 Contributed to developing and implementing ROS navigation for obstacle avoidance and path planning. Focused on data cleaning, processing, evaluation, and visualization of rosbag files. Researched and implemented metric evaluation for ROS based navigation, G-Mapping and RTAB-Map. Helped to organize Github repo, final report, and contributed to weekly discussions throughout the course of the project.
 
 <b>Seokmin Hong</b> A14614169 <br />
-Seokmin contributed by ...
+Contributed by integrating the Intel Realsense Camera and Hokuyo Lidar to the TurtleBots for Gazebo simulations of G-Mapping and RTAB-Mapping algorithms. Also modified RViz so that 2-D Navigation Goal could allow users to input a final "goal" for robot to autonomously navigate from one position to the final destination. Helped finalize the final report, as well as contributed to the weekly discussions throughout the course of the replication project.
 
 <b>Jia Shi</b> A15233744 <br />
-
 Conducted comparison study for different navigation algorithm with Donkey AI. Built up the docker-file and the real time model prediction visualization Donkey car. Research on the evaluation metrics as well as the efficiency of applying different navigation algorithms into different situation. Contributed to the weekly discussion and helped to organize the GitHub-repo, checkpoint and reports. Contributed to the development of ROS navigation on path planing and obstacle avoidance. 
