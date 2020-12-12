@@ -10,13 +10,20 @@
 References here:
 
 useful links: <br/>
-[1] https://www.researchgate.net/figure/Visualization-tools-and-Runtime-Manager-for-Autoware-Developers-can-use-these-tools-to_fig1_317417549 <br/>
-[2]https://www.researchgate.net/profile/Mohammadreza_Radmanesh/publication/324416551_Overview_of_Path_Planning_and_Obstacle_Avoidance_Algorithms_for_UAVs_A_Comparative_Study/links/5ad0c0c5a6fdcc29357ad85b/Overview-of-Path-Planning-and-Obstacle-Avoidance-Algorithms-for-UAVs-A-Comparative-Study.pdf <br/>
-[3] https://github.com/CPFL/Autoware-Manuals/blob/master/en/Autoware_UsersManual_v1.1.md <br/>
-[4] http://wiki.ros.org/rosbag/Code%20API <br/>
-[5] https://github.com/jmscslgroup/bagpy/blob/master/notebook/Bagpy%20tutorial.ipynb <br/>
-[6] http://wiki.ros.org/rviz/DisplayTypes/PointCloud <br/>
-[7] https://wiki.ros.org/depthimage_to_laserscan <br/>
-[8] http://wiki.ros.org/rtabmap <br/> 
-[9] https://github.com/ros-visualization/rviz <br/>
+[1] https://www.intelrealsense.com/get-started-depth-camera <br/>
+[2] http://wiki.ros.org/Robots/TurtleBot <br/>
+[3] http://gazebosim.org/tutorials?tut=ros_overview <br/>
+[4] https://f1tenth.dev/ <br/>
+[5] http://selfracingcars.com/ <br/>
+[6] http://wiki.ros.org/gmapping <br/>
+[7] http://wiki.ros.org/rviz <br/>
+[8] http://wiki.ros.org/rtabmap_ros <br/> 
+[9] http://wiki.ros.org/rosbag <br/>
+[10] http://donkeycar.com/ <br/>
+[11] https://github.com/autorope/donkeycar/blob/4580ec74800db2a9e4288d49c36c41b1c2077c42/donkeycar/templates/cv_control.py <br/>
+[12] https://github.com/araffin/learning-to-drive-in-5-minutes <br/>
+[13] https://www.researchgate.net/publication/200744624_Performance_evaluation_of_pure-motion_tasks_for_mobile_robots_with_respect_to_world_models <br/>
+[14] http://wiki.ros.org/amcl <br/>
+[15] https://github.com/sisaha9/dsc180a-slam-simulator/tree/main?fbclid=IwAR3b-jkkB0VUGdEm4pWDdQxwG3R6gI8_n23VGCdmtp7Ll94vEog-EgCivEU <br/>
+[16] https://ieeexplore.ieee.org/abstract/document/8317265 <br/>
 ***
