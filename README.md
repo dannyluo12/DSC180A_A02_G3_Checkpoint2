@@ -9,6 +9,8 @@ This project aims to illustrate various methods of obstacle avoidance and path p
 
 ## Building the project using `run.py`
 * Use the commang `python run.py data` to create the data folder. Created via a symbolic link to our data directory in the /teams directory (accessible only if you are on UC San Diego DSMLP server)
+* Use the command `python run.py eda` to transform rosbag data into csv data and perform further eda
+* Use the command `python run.py plot` to plot the csv data into matplotlib plots and figures
 * Use the command `python run.py test` to run the data pipeline on a subset of the data
 * Use the command `python run.py all` to run the data pipeline on the whole dataset
 
