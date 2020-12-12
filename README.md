@@ -1,8 +1,8 @@
 # Obstacle Avoidance and Path Planning
 
-This project aims to illustrate various methods of obstacle avoidance and path planning through simulations. ROS (Robotic Operating system) navigation stacks are utilized in which gmapping and rtabmap are implemented to travel from point A to point B. Data generated from respective simulations are contained exported via rosbag files in which further exploratory data analysis can be performed. It must be noted that ROS and Ubuntu linux OS could not be loaded onto a respective dockerfile to create simulations upon launching a docker image. Therefore, rosbags were the chosen data structure to export data as they contain all the rostopic messages and its respective data. After performing EDA, plots and visualizations of the data are generated. (still can edit before submission) 
+This project aims to illustrate various methods of obstacle avoidance and path planning through simulations. ROS (Robotic Operating system) navigation stacks are utilized in which gmapping and rtabmap are implemented to travel from point A to point B. Data generated from respective simulations are contained exported via rosbag files in which further exploratory data analysis can be performed. It must be noted that ROS and Ubuntu linux OS could not be loaded onto a respective dockerfile to create simulations upon launching a docker image. Therefore, rosbags were the chosen data structure to export data as they contain all the rostopic messages and its respective data. After performing EDA, plots and visualizations of the data are generated.
 
-### Most of the coding materials of our project is based on ROS Gazebo and Donkey AI simulation, thus most of our core code are in local computer rather than to be included in this repo.
+<b>Note: </b> most of the coding materials of our project is based on ROS Gazebo and Donkey AI simulation, thus most of our core code are in local computers rather than this repo due to docker image limitations
 
 ## Running the project
 * Use the command `launch.sh -i elvishelvis/dsc180s2g3 -c 4 -m 8  -P Always` in order to have the necessary environment to run data processing, analysis, and visualization
@@ -14,7 +14,7 @@ This project aims to illustrate various methods of obstacle avoidance and path p
 
 ### Contributions:
 <b>Yuxi Luo</b> A14862234 <br />
-Yuxi contributed by ...
+Contributed to developing and implementing ROS navigation for obstacle avoidance and path planning. Focused on data cleaning, processing, evaluation, and visualization of rosbag files. Researched and implemented metric evaluation for ROS based navigation, G-Mapping and RTAB-Map. Helped to organize Github repo, final report, and contributed to weekly discussions throughout the course of the project.
 
 <b>Seokmin Hong</b> A14614169 <br />
 Seokmin contributed by ...
