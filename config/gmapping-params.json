@@ -1,0 +1,5 @@
+{
+    "indir" : "./data/raw",
+    "outdir" : "./data/post_eda",
+    "bag" : "gmapping_data.bag"
+}

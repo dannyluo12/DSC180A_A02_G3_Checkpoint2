@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import shutil
 
-def get_data(indir_velocity, indir_odometry, indir_standard, indir_wrench, outdir_velocity, outdir_odometry, outdir_standard, outdir_wrench):
+def get_data(indir_origin_bag, indir_gmapping_bag, indir_rtab_bag, outdir_origin_bag, outdir_gmapping_bag, outdir_rtab_bag):
 
     '''
     Reads the data by creating a symlink between the 
@@ -28,10 +28,9 @@ def get_data(indir_velocity, indir_odometry, indir_standard, indir_wrench, outdi
 
     # create the symlink
 #     os.symlink(data_link, indir)
-    os.symlink(indir_velocity, outdir_velocity)
-    os.symlink(indir_odometry, outdir_odometry)
-    os.symlink(indir_standard, outdir_standard)
-    os.symlink(indir_wrench, outdir_wrench)
+    os.symlink(indir_origin_bag, outdir_origin_bag)
+    os.symlink(indir_gmapping_bag, outdir_gmapping_bag)
+    os.symlink(indir_rtab_bag, outdir_rtab_bag)
 
     return 
 

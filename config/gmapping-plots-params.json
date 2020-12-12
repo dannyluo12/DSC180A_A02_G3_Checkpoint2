@@ -1,0 +1,6 @@
+{
+    "odom_data" : "./data/post_eda/gmapping_odometry_data.csv",
+    "standard_data" : "./data/post_eda/gmapping_standard_data.csv",
+    "velocity_data" : "./data/post_eda/gmapping_velocity_data.csv",
+    "outdir" : "./data/post_eda/data_plots"
+}
